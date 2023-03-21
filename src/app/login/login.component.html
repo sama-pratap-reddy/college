@@ -1,0 +1,25 @@
+<div class="parent">
+  <div class="left">
+    <div class="child">
+      <h3>Login</h3>
+      <form [formGroup]="loginform">
+        <label name="email">Email</label><br>
+        <input class="a" type="text" placeholder="Email" formControlName="email"><br><br>
+        <label for="">Password</label><br>
+        <input class="a" type="text" placeholder="Password" formControlName="password"><br><br>
+        <div class="pass">
+          <input type="checkbox">
+          <p>Rember me</p>
+          <p>Forgot Password</p>
+          <hr color="red">
+        </div>
+        <!-- <button id="login" routerLink="/dashboard">login</button><hr> -->
+        <button id="login" (click)="submit()" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+  </div>
+  <div class="right">
+    <!-- <p>right</p> -->
+
+  </div>
+</div>
